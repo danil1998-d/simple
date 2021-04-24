@@ -1,0 +1,42 @@
+.app-header {
+  align-items: flex-end;
+  justify-content: space-between;
+
+}
+
+.app-header h1 {
+  /* width: 150px;
+  height: 150px; */
+  font-size: 30px;
+}
+
+.statusfilter h2 {
+  font-size: 16px;
+  color: #757575;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+.app-header svg {
+  margin-left: 20px;
+}
+.statusfilter {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .statusfilter h2 {
+    font-size: 13px;
+    margin: 6px 1px 0 0
+  }
+  .app-header h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .app-header svg {
+    margin-left: 4px;
+    margin-bottom: 5px;
+  }
+  .statusfilter {
+    display: block;
+  }
+}

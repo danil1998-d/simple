@@ -1,0 +1,131 @@
+.app-list-item {
+  font-size: 18px;
+  font-style:initial;
+  border-radius: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 4px 24px;
+  margin-top: 5px;
+  position: relative;
+  list-style-type: none;
+  max-height: 75px;
+}
+.list-group-item {
+  list-style: none;
+}
+.app-list-item::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgb(228, 222, 222);
+  top: 3px;
+  right: 20px;
+  border-radius: 8px;
+  z-index: 1;
+  cursor: pointer;
+}
+.post-list {
+    padding: 0;
+}
+.app-list-item button {
+  width: 35px;
+  height: 35px;
+  margin: 3px 10px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(247, 243, 243);
+  border-radius: 8px;
+}
+.app-list-item button:nth-child(2) {
+  margin-right: 15px;
+}
+.app-list-item button:focus {
+    box-shadow: none;
+    outline: none;
+}
+.app-list-item .btn-star {
+    color: #aeaeae;
+}
+.app-list-item .btn-trash {
+    color: #d64848;
+}
+.app-list-item .fa-check {
+  width: 35px;
+  height: 35;
+    text-align: center;
+    line-height: 35px;
+    font-size: 27px;
+    color: #A8E4B1;
+    transition: 0.2s all;
+    transform: translateX(10px);
+    opacity: 0;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    background: none;
+}
+
+.app-list-item-label {
+  display: block;
+  line-height: 1.2;
+  user-select: none;
+  transition: 0.2s all;
+  width: 60%;
+
+}
+
+.app-list-item.like .fa-check {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+.app-list-item.important .app-list-item-label {
+  color: #f3aa21;
+  font-weight: 600;
+}
+
+.app-list-item.important .btn-star {
+    color: #FFD78A;
+}
+.delete {
+  display: none;
+}
+.app-list-item span {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+@media (max-width: 600px) {
+  .app-list-item span {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .app-list-item button {
+    margin: 3px 5px;
+  }
+  .app-list-item button:nth-child(2) {
+    margin-right: 6px;
+  }
+  .app-list-item-label {
+    font-size: 16px;
+  }
+  .app-list-item {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
+  .app-list-item::after {
+    right: 5px;
+  }
+}
+@media (max-width: 330px) {
+  .app-list-item-label {
+    font-size: 13px;
+  }
+  .app-list-item span {
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+}

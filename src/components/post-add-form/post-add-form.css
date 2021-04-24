@@ -1,0 +1,50 @@
+.add__form {
+  width: 77%;
+  height: 41px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+  border: 2px solid transparent;
+  margin-top: 26px;
+  margin-right: 3%;
+  outline: none;
+}
+.add__form:focus-visible {
+  border-color: #47a5f7;
+  outline: none;
+}
+.add__btn {
+  width: 20%;
+  height: 41px;
+  border: 1.5px solid transparent;
+  border-color: #398194;
+  border-radius: 8px;
+  background-color: #B9E1FB;
+  outline: none;
+  color: #398194;
+  font-size: 14px;
+  cursor: pointer;
+}
+.add__btn:hover {
+  color: #fff;
+  background-color: #398194;
+  border: none;
+}
+.add__btn:focus-visible {
+  outline: none;
+}
+.post-add-form {
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .add__btn {
+    font-size: 14px;
+    width: 30%;
+  }
+  .add__form {
+    width: 67%;
+  }
+}

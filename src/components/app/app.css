@@ -1,0 +1,21 @@
+.app {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 0 15px;
+}
+.search-panel {
+  display: block;
+  width: 47%;
+}
+.headersearch {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .search-panel {
+    width: 65%;
+  }
+}
+
+
