@@ -31,7 +31,7 @@ export default class App extends Component {
     this.onToggleImportant = this.onToggleImportant.bind(this);
     this.onToggleLiked = this.onToggleLiked.bind(this);
     this.onUpdateSearch = this.onUpdateSearch.bind(this);
-    this.onFilterSelect = this.onFilterSelect.bind(this);
+    this.onFilterSelect = this.onFilterSelect.bind(this)
 
     this.maxId = 4;
   }
